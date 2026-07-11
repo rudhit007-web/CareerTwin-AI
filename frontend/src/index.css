@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ibm-dark text-ibm-white;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  /* ── Inputs ── */
+  .input {
+    @apply w-full bg-ibm-gray-2 border border-ibm-gray-3 rounded px-3 py-2
+           text-ibm-white text-sm placeholder-ibm-gray-4
+           focus:outline-none focus:border-ibm-blue transition-colors duration-150;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-ibm-gray-4 mb-1.5 uppercase tracking-wide;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply bg-ibm-blue hover:bg-blue-700 text-white text-sm font-medium
+           px-4 py-2 rounded transition-colors duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-ibm-gray-2 hover:bg-ibm-gray-3 text-ibm-white text-sm font-medium
+           px-4 py-2 rounded border border-ibm-gray-3 transition-colors duration-150;
+  }
+
+  .btn-ghost {
+    @apply text-ibm-gray-4 hover:text-ibm-white text-sm
+           px-3 py-1.5 rounded hover:bg-ibm-gray-2 transition-colors duration-150;
+  }
+
+  /* ── Cards ── */
+  .card {
+    @apply bg-ibm-gray rounded-lg border border-ibm-gray-3 p-5;
+  }
+
+  .card-hover {
+    @apply card hover:border-ibm-blue transition-colors duration-150;
+  }
+
+  /* ── Badges ── */
+  .badge {
+    @apply text-xs font-medium px-2 py-0.5 rounded-full;
+  }
+
+  .badge-blue   { @apply bg-ibm-blue/20   text-ibm-blue;   }
+  .badge-cyan   { @apply bg-ibm-cyan/20   text-ibm-cyan;   }
+  .badge-green  { @apply bg-ibm-green/20  text-ibm-green;  }
+  .badge-yellow { @apply bg-ibm-yellow/20 text-ibm-yellow; }
+  .badge-red    { @apply bg-red-900/30    text-red-400;    }
+  .badge-purple { @apply bg-ibm-purple/20 text-ibm-purple; }
+}
