@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     watsonx_model_id: str = "meta-llama/llama-3-3-70b-instruct"
 
     # CORS
-    allowed_origins: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    allowed_origins: list[str] = ["http://localhost:3000", "http://localhost:5173","https://careertwinfrontend-2ajh.onrender.com"]
 
     # File Upload
     max_upload_size_mb: int = 10

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api' })
+const api = axios.create({ baseURL: 'https://careertwinbackend.onrender.com' })
 
 // Attach the JWT token from localStorage on every request.
 // axios.create() instances do NOT inherit axios.defaults, so we
