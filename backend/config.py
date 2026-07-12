@@ -26,8 +26,8 @@ class Settings(BaseSettings):
     database_url: str = "sqlite+aiosqlite:///./database/careertwin.db"
 
     # IBM watsonx.ai
-    watsonx_api_key: str = ""
-    watsonx_project_id: str = ""
+    watsonx_api_key: str = "vQ0rVY4dY2yG0ePci0uQHHkVzkwD_zd4jwy7rqvXm2w_"
+    watsonx_project_id: str = "d8e961ba-416e-452d-9982-fa856ba63ae5"
     watsonx_url: str = "https://au-syd.ml.cloud.ibm.com"
     watsonx_model_id: str = "meta-llama/llama-3-3-70b-instruct"
 
